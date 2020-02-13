@@ -74,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
           string = string + array[i]+" "
           i += 1
         end
-        string = string + array[i+1].capitalize
+        string = string + array[i].capitalize
         puts "#{string}: #{supplys.join(", ")}"
       else
         puts "  #{day.to_s.capitalize}"+": #{supplys.join(", ")}"
