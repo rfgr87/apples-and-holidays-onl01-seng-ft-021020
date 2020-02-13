@@ -66,6 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season.to_s.capitalize}:"
     holiday.each do |day, supplys|
       if day.to_s.include?("_")
+        string = ""
         array = []
         array = day.to_s.split("_")
         i = 0
