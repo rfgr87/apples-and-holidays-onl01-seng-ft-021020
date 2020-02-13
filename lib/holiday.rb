@@ -80,7 +80,7 @@ def all_supplies_in_holidays(holiday_hash)
           i += 1
         end
         string = string + array[i]
-        puts " #{string}: #{supplys.join(", ")}"
+        puts "  #{string}: #{supplys.join(", ")}"
       else
         puts "  #{day.to_s.capitalize}"+": #{supplys.join(", ")}"
       end
