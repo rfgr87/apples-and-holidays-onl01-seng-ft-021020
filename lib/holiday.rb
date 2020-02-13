@@ -70,13 +70,17 @@ def all_supplies_in_holidays(holiday_hash)
         array = []
         array = day.to_s.split("_")
         i = 0
-        while i < array.length-1
+        while i < array.length
           array[i].capitalize
+          i += 1
+        end
+        i = 0
+        while i < array.length - 1
           string = string + array[i]+" "
           i += 1
         end
-        string = string + array[i].capitalize
-        puts " #{string.capitalize}: #{supplys.join(", ")}"
+        string = string + array[i]
+        puts " #{string}: #{supplys.join(", ")}"
       else
         puts "  #{day.to_s.capitalize}"+": #{supplys.join(", ")}"
       end
