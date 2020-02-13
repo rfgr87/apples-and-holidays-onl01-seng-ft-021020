@@ -71,7 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
         array = day.to_s.split("_")
         i = 0
         while i < array.length
-          array[i].capitalize
+          array[i] = array[i].capitalize
           i += 1
         end
         i = 0
